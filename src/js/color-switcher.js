@@ -1,8 +1,9 @@
 const { startBtnEl, stopBtnEl, bodyEl } = {
-    startBtnEl: document.querySelector('button[data-start]'),
-    stopBtnEl: document.querySelector('button[data-stop]'),
-    bodyEl: document.querySelector('body')
+  startBtnEl: document.querySelector('button[data-start]'),
+  stopBtnEl: document.querySelector('button[data-stop]'),
+  bodyEl: document.querySelector('body')
 };
+
 let interval = null;
 stopBtnEl.disabled = true;
 
@@ -14,15 +15,15 @@ function getRandomHexColor() {
 }
 
 function startChangeBgColor() {
-    startBtnEl.disabled = true;
-    stopBtnEl.disabled = false;
-    interval = setInterval(() => {
+  startBtnEl.disabled = true;
+  stopBtnEl.disabled = false;
+  interval = setInterval(() => {
     bodyEl.style.backgroundColor = getRandomHexColor();
   }, 1000);
 };
 
 function stopChangeBgColor() {
-    startBtnEl.disabled = false;
-    stopBtnEl.disabled = true;
-    clearInterval(interval);
+  startBtnEl.disabled = false;
+  stopBtnEl.disabled = true;
+  clearInterval(interval);
 };

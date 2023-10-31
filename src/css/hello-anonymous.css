@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#name-input {
+    border: 1px solid #FFC94B;
+    border-radius: 6px;
+}
+
+#name-input:focus {
+    outline: none;
+    border: 2px solid #F9A66C;
+}
+
+#name-output {
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #F17A7E;
+}
+
+.hello {
+    color: #4A6163;
+}

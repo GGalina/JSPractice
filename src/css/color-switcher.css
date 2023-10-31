@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn {
+    font-weight: 600;
+    width: 110px;
+    color: #4A6163;
+    border-radius: 10px;
+    border: 1px solid #F17A7E;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}

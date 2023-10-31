@@ -1,99 +1,73 @@
-# Parcel template
+# JavaScript Projects
 
-Этот проект был создан при помощи Parcel. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://parceljs.org/).
+This repository contains a collection of JavaScript projects that showcase various functionalities and technologies. Each project is implemented using HTML, CSS, and JavaScript, with some projects utilizing additional libraries for enhanced features.
 
-## Подготовка нового проекта
+## Color Switcher
+- Description: Press the "Start" button to initiate a background color switch, and press "Stop" to halt the color transition. The background color changes every second.
+- Technologies used: HTML, CSS, JS.
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Склонируй этот репозиторий.
-3. Измени имя папки с `parcel-project-template` на имя своего проекта.
-4. Создай новый пустой репозиторий на GitHub.
-5. Открой проект в VSCode, запусти терминал и свяжи проект с GitHub-репозиторием
-   [по инструкции](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
-6. Установи зависимости проекта в терминале командой `npm install` .
-7. Запусти режим разработки, выполнив команду `npm start`.
-8. Перейди в браузере по адресу [http://localhost:1234](http://localhost:1234).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+## Countdown Timer
+- Description: A timer that counts down to the selected time and date. If a user selects a past date and time, a pop-up notification appears, prompting them to choose a future date.
+- Technologies used: HTML, CSS, JS.
+- Libraries: flatpickr, Notiflix.
 
-## Файлы и папки
+## Promise Generator
+- Description: Generates promises based on user-defined delay, step delay, and step count. Notiflix is used to notify the user of rejected or fulfilled promises.
+- Technologies used: HTML, CSS, JS.
+- Library: Notiflix.
 
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  файлы стилей страниц. Например, для `index.html` файл стилей называется
-  `index.scss`.
-- Изображения добавляй в папку `src/images`. Сборщик оптимизирует их, но только
-  при деплое продакшн версии проекта. Все это происходит в облаке, чтобы не
-  нагружать твой компьютер, так как на слабых машинах это может занять много
-  времени.
+## Image Gallery (SimpleLightbox)
+- Description: Displays images from a file using the SimpleLightbox library.
+- Technologies used: HTML, CSS, JS.
+- Library: SimpleLightbox.
 
-## Деплой
+## Video Playback
+- Description: A video player that remembers the video's pause position. It integrates with Vimeo and utilizes the Lodash library.
+- Technologies used: HTML, CSS, JS.
+- Libraries: Vimeo, Lodash.
 
-Для настройки деплоя проекта необходимо выполнить несколько дополнительных шагов
-по настройке твоего репозитория. Зайди во вкладку `Settings` и в подсекции
-`Actions` выбери выбери пункт `General`.
+## Feedback Form
+- Description: A feedback form with standard email field validation and local storage of entered information.
+- Technologies used: HTML, CSS, JS.
+- Libraries: Lodash, Notiflix.
 
-![GitHub actions settings](./assets/actions-config-step-1.png)
+## Image Gallery (BasicLightbox)
+- Description: Displays images from a file using the BasicLightbox library.
+- Technologies used: HTML, CSS, JS.
+- Library: BasicLightbox.
 
-Пролистай страницу до последней секции, в которой убедись что выбраны опции как
-на следующем изображении и нажми `Save`. Без этих настроек у сборки будет
-недостаточно прав для автоматизации процесса деплоя.
+## Categories List
+- Description: Lists different categories and displays the number of categories and the number of elements in each category using `console.log`.
+- Technologies used: HTML, CSS, JS.
 
-![GitHub actions settings](./assets/actions-config-step-2.png)
+## Grocery List
+- Description: Displays a list of products inserted into HTML through JavaScript.
+- Technologies used: HTML, CSS, JS.
 
-Продакшн версия проекта будет автоматически собираться и деплоиться на GitHub
-Pages, в ветку `gh-pages`, каждый раз когда обновляется ветка `main`. Например,
-после прямого пуша или принятого пул-реквеста. Для этого необходимо в файле
-`package.json` отредактировать поле `homepage` и скрипт `build`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
+## Gallery from JS
+- Description: Displays a list of images inserted into HTML through JavaScript.
+- Technologies used: HTML, CSS, JS.
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /your_repo_name/"
-},
-```
+## Counter
+- Description: Features two buttons to decrease or increase the count and displays the current count value.
+- Technologies used: HTML, CSS, JS.
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+## Hello Anonymous
+- Description: The greeting message adjusts based on the user's name input.
+- Technologies used: HTML, CSS, JS.
 
-![GitHub Pages settings](./assets/repo-settings.png)
+## Symbols Check
+- Description: Enter exactly six symbols to get a green outline; any other amount results in a red outline.
+- Technologies used: HTML, CSS, JS.
 
-### Статус деплоя
+## Login Form
+- Description: Takes input from the form and logs it to the console.
+- Technologies used: HTML, CSS, JS.
 
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
+## Background Color Switcher
+- Description: Change the background color by clicking a button and display the hex code of the background color.
+- Technologies used: HTML, CSS, JS.
 
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
-
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
-
-![Deployment status](./assets/status.png)
-
-### Живая страница
-
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
-
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` или скрипта `build` в
-файле `package.json`.
-
-## Как это работает
-
-![How it works](./assets/how-it-works.png)
-
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+## Block Builder
+- Description: Creates a block tower with the number of blocks specified in an input field.
+- Technologies used: HTML, CSS, JS.

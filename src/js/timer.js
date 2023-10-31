@@ -12,11 +12,6 @@ const {inputFieldEl, startBtnEl, daysEl, hoursEl, minutesEl, secondsEl, timerCon
     timerContainerEl: document.querySelector('.timer')
 };
 
-timerContainerEl.style.display = "flex";
-timerContainerEl.style.justifyContent = "center";
-timerContainerEl.style.gap = "40px";
-timerContainerEl.style.fontSize = "36px";
-
 startBtnEl.disabled = true;
 startBtnEl.addEventListener('click', startCountdown);
 
@@ -40,6 +35,7 @@ flatpickr(inputFieldEl, options);
 function startCountdown() {
     inputFieldEl.disabled = true;
     startBtnEl.disabled = true;
+
     const interval = setInterval(() => {
         let selectedDates = inputFieldEl.value;
         let currentTime = new Date();
@@ -76,4 +72,4 @@ function convertMs(ms) {
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
 
   return { days, hours, minutes, seconds };
-}
+};

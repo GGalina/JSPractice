@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <title>Abracadabra</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      #font-size-control {
+        cursor: pointer;
+      }
+
+      #text {
+        font-weight: 600;
+        color: #4A6163;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="../index.html" class="goBack">Go back</a></p>
+
+    <div class="container">
+      <input id="font-size-control" type="range" min="16" max="96" />
+      <br />
+      <span id="text">Abracadabra!</span>
+    </div>
+
+    <script src="../js/abracadabra.js" type="module"></script>
+  </body>
+</html>

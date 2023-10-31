@@ -1,0 +1,21 @@
+#validation-input {
+    border: 2px solid #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#validation-input:focus {
+    outline: none;
+    border: 2px solid #FFC94B;
+}
+
+#validation-input.valid {
+    border-color: #4caf50;
+}
+
+#validation-input.invalid {
+    border-color: #f44336;
+}

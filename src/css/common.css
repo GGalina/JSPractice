@@ -7,12 +7,143 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #E8DFE0;
   color: #212121;
   line-height: 1.5;
+  margin: 0 auto;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+input {
+  padding: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: initial;
+  color: initial;
+  background-color: initial;
+  border: initial;
+}
+
+.header {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #4A6163;
+}
+
+.listItem {
+  width: 300px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.link {
+  display: block;
+  padding: 10px 20px;
+  background-color: #FFC94B;
+  border: 1px solid #FFC94B;
+  border-radius: 15px;
+  color: #4A6163;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  background-color: #F9A66C;
+  border: 1px solid #F9A66C;
+  color: #4A6163;
+  transform: scale(1.05);
+}
+
+.list {
+  margin: 0 auto;
+  width: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.goBack {
+  display: block;
+  font-weight: 600;
+  width: 110px;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #F17A7E;
+  border-radius: 15px;
+  border: 1px solid #F17A7E;
+  color: #E8DFE0;
+  margin: 20px; 
+}
+
+.goBack:hover {
+  background-color: #FFC94B;
+  border: 1px solid #FFC94B;
+  color: #4A6163;
+  transform: scale(1.05);
+}
+
+/* Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F9FAF4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFC94B;
+  border-radius: 10px;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+  width: 10px;
+}
+
+::-moz-scrollbar-track {
+  background: #F9FAF4;
+}
+
+::-moz-scrollbar-thumb {
+  background: #FFC94B;
+  border-radius: 10px;
+}
+
+/* Microsoft Edge */
+::-ms-scrollbar {
+  width: 10px;
+}
+
+::-ms-scrollbar-track {
+  background: #F9FAF4;
+}
+
+::-ms-scrollbar-thumb {
+  background: #FFC94B;
+  border-radius: 10px;
 }
