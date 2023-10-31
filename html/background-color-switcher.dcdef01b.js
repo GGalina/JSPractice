@@ -1,0 +1,2 @@
+!function(){var o={backgroundEl:document.querySelector("body"),changeBtnEl:document.querySelector('[type="button"]'),colorEl:document.querySelector(".color")},t=o.backgroundEl,n=o.colorEl;o.changeBtnEl.addEventListener("click",(function(){var o="#".concat(Math.floor(16777215*Math.random()).toString(16).padStart(6,0));t.style.backgroundColor=o,n.textContent=o}))}();
+//# sourceMappingURL=background-color-switcher.dcdef01b.js.map

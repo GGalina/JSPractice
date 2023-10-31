@@ -1,0 +1,2 @@
+!function(){var e={categories:document.querySelector("ul#categories"),categoriesList:categories.querySelectorAll("li.item")};console.log("Number of categories :",e.categoriesList.length);var t=!0,l=!1,o=void 0;try{for(var r,i=e.categoriesList[Symbol.iterator]();!(t=(r=i.next()).done);t=!0){var n=r.value;console.log("Category: ",n.firstElementChild.textContent),console.log("Elements: ",n.lastElementChild.children.length)}}catch(e){l=!0,o=e}finally{try{t||null==i.return||i.return()}finally{if(l)throw o}}}();
+//# sourceMappingURL=categories-list.56e00bc1.js.map

@@ -1,0 +1,2 @@
+!function(){var e={decrementBtnEl:document.querySelector('[data-action="decrement"]'),incrementBtnEl:document.querySelector('[data-action="increment"]'),valueDisplayEl:document.querySelector("#value"),counter:{value:0,decrement:function(){return this.value-=1},increment:function(){return this.value+=1}}},t=e.incrementBtnEl,n=e.valueDisplayEl,c=e.counter;e.decrementBtnEl.addEventListener("click",(function(){c.decrement(),n.textContent=c.value})),t.addEventListener("click",(function(){c.increment(),n.textContent=c.value}))}();
+//# sourceMappingURL=counter.debc5f4a.js.map

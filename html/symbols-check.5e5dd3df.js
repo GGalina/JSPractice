@@ -1,0 +1,2 @@
+document.querySelector("#validation-input").addEventListener("blur",(function(t){t.target.value.length===Number(t.target.dataset.length)?(t.target.classList.add("valid"),t.target.classList.remove("invalid")):0===t.target.value.length?(t.target.classList.remove("valid"),t.target.classList.remove("invalid")):(t.target.classList.remove("valid"),t.target.classList.add("invalid"))}));
+//# sourceMappingURL=symbols-check.5e5dd3df.js.map

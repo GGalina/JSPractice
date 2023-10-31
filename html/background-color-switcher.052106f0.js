@@ -1,0 +1,2 @@
+const{backgroundEl:t,changeBtnEl:o,colorEl:e}={backgroundEl:document.querySelector("body"),changeBtnEl:document.querySelector('[type="button"]'),colorEl:document.querySelector(".color")};o.addEventListener("click",(function(){let o=`#${Math.floor(16777215*Math.random()).toString(16).padStart(6,0)}`;t.style.backgroundColor=o,e.textContent=o}));
+//# sourceMappingURL=background-color-switcher.052106f0.js.map
